@@ -1,0 +1,12 @@
+This file holds my notes for working with a dualshock three controller.
+
+        private const uint IoctlAirbenderGetHostBdAddr = 0x80006004;
+        private const uint IoctlAirbenderHostReset = 0x80002008;
+        private const uint IoctlAirbenderGetClientCount = 0x8000600C;
+        private const uint IoctlAirbenderGetClientState = 0x8000E010;
+        internal const uint IoctlAirbenderGetDs3InputReport = 0x8000E014;
+        internal const uint IoctlAirbenderSetDs3OutputReport = 0x8000A018;
+        private const uint IoctlAirbenderHostShutdown = 0x8000201C;
+        private const uint IoctlAirbenderGetClientArrival = 0x80006020;
+        private const uint IoctlAirbenderGetClientRemoval = 0x80006024;
+        private const uint IoctlAirbenderGetHostVersion = 0x80006028;
