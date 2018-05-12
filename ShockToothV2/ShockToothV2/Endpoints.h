@@ -15,6 +15,9 @@ USB COMPLIANCE| 1           | 0                 | 0x03                    | Isoc
 --------------|-------------|-------------------|-------------------------|---------------|---------------------
 https://camo.githubusercontent.com/8d124106494e2ff772382cfdebc81b7b18f2d3ee/687474703a2f2f626c6f672e746b6a656c656374726f6e6963732e646b2f77702d636f6e74656e742f75706c6f6164732f4843492d41434c2d446174612d5061636b65742e6a7067
 1. Set up the usb dongle using HCI
+	a. Set up usb communications
+	b. Set up HCI commands
+	c. Send the commands
 
 2. Wait for incoming request
 
@@ -41,3 +44,7 @@ Send a Set Feature Report (0x53) with a report ID (0xF4) and the following data:
 Finally just listen in on the bulkin endpoint and watch the bytes changing!
 
 */
+
+//#include <wdfusb.h>
+//#include <wdftypes.h>
+

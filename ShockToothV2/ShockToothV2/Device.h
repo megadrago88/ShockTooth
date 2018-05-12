@@ -23,6 +23,21 @@ EXTERN_C_START
 typedef struct _DEVICE_CONTEXT
 {
     WDFUSBDEVICE UsbDevice;
+
+	WDFUSBPIPE BulkIn;
+
+	WDFUSBPIPE BulkOut;
+
+	BD_ADDR Addr;
+
+	BOOLEAN Connected;
+
+	BOOLEAN Initialized;
+
+	UINT8 HciVersionMajor;
+	
+	UINT8 LmpVersionMajor;
+	
     ULONG PrivateDeviceData;  // just a placeholder
 
 } DEVICE_CONTEXT, *PDEVICE_CONTEXT;
